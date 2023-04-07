@@ -25,6 +25,11 @@ btnJaune.addEventListener("click", function() {
 
 let ordreJoueur = [];
 
+let longueur = 1;
+let ordre = [ordreRandom()];
+let indice = 0
+
+
 function eteindreBTN(couleur) {
     couleur.classList.add("off");
 }
@@ -66,17 +71,15 @@ function annimationDebut() {
 
 
 function ordreRandom() {
+    couleurs = [btnRouge, btnVert, btnBleu, btnJaune];
     let ordre = Math.floor(Math.random() * 4);
-    return ordre;
+    return couleurs[ordre];
 }
 
 
 function startGame() {
     annimationDebut();
-    let longueur = 1;
-    let ordre = [ordreRandom()];
-    let indice = 0
-    afficherOrdre(ordre);
+    setTimeout(afficherOrdre, 5000, ordre);
 
 
 
@@ -84,7 +87,6 @@ function startGame() {
 
 function afficherOrdre(ordre) {
     for (let i = 0; i < ordre.length; i++) {
-        alert("test")
         setTimeout(allumerBTN, 500 * i, ordre[i]);
         setTimeout(eteindreBTN, 500 * i + 500, ordre[i]);
     }
@@ -92,7 +94,8 @@ function afficherOrdre(ordre) {
     
     
     
-function testOrdre(couleur){
+function testOrdre(couleur) {
+
     couleurs = [btnRouge, btnVert, btnBleu, btnJaune];
     if (couleur == couleurs[ordre[indice]]){
         indice++;
