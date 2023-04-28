@@ -77,3 +77,4 @@ actions :
 ## ce que j'ai appris
 
 - utilisation de setTimeout
+- utiliser toggle plutôt que on et off
