@@ -1,12 +1,21 @@
 /* fond */
 
+#plateau {
+    /* carré de la largeur de l'écran et avec une hauteur egale à la largeur */
+    width: 504px;
+    height: 504px;
+    border: 2px solid darkgray;
+
+}
+
 
 /* zone de couleur */
 /* zone rouge 1/4 de cercle */
+
 #rouge {
-    background-color: black;
+    background-color: red;
     width: 48%;
-    height: 252px;
+    height: 48%;
     border-radius: 50% 0 0 0;
     float: left;
 
@@ -16,8 +25,8 @@
 /* zone verte 1/4 de cercle */
 #vert {
     background-color: green;
-    width: 252px;
-    height: 252px;
+    width: 48%;
+    height: 48%;
     border-radius: 0 50% 0 0;
     float: left;
 }
@@ -27,8 +36,8 @@
 /* zone bleue 1/4 de cercle */
 #bleu {
     background-color: blue;
-    width: 252px;
-    height: 252px;
+    width: 48%;
+    height: 48%;
     border-radius: 0 0 0 50%;
     float: left;
 }
@@ -36,8 +45,8 @@
 /* zone jaune 1/4 de cercle */
 #jaune {
     background-color: yellow;
-    width: 252px;
-    height: 252px;
+    width: 48%;
+    height: 48%;
     border-radius: 0 0 50% 0;
     float: left;
 }
