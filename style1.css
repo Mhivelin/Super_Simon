@@ -1,0 +1,67 @@
+/* fond */
+
+
+/* zone de couleur */
+/* zone rouge 1/4 de cercle */
+#rouge {
+    background-color: black;
+    width: 48%;
+    height: 252px;
+    border-radius: 50% 0 0 0;
+    float: left;
+
+}
+
+
+/* zone verte 1/4 de cercle */
+#vert {
+    background-color: green;
+    width: 252px;
+    height: 252px;
+    border-radius: 0 50% 0 0;
+    float: left;
+}
+
+
+
+/* zone bleue 1/4 de cercle */
+#bleu {
+    background-color: blue;
+    width: 252px;
+    height: 252px;
+    border-radius: 0 0 0 50%;
+    float: left;
+}
+
+/* zone jaune 1/4 de cercle */
+#jaune {
+    background-color: yellow;
+    width: 252px;
+    height: 252px;
+    border-radius: 0 0 50% 0;
+    float: left;
+}
+
+/* bouton start */
+#start {
+    width: 504px;
+    height: 40px;
+    border-color: darkgray;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgray;
+    cursor: pointer;
+
+}
+
+
+/* eclairci quand */
+.off {
+    opacity: 0.2;
+}
